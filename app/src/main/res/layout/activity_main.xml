@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bruh"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/power"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_power"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/zoom16zu9"
+        app:layout_constraintEnd_toStartOf="@+id/pip"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/power"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_pause"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ImageButton
+        android:id="@+id/pip"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/zoom3zu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pause"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_pip"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintEnd_toStartOf="@+id/zoom16zu9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power"
+        app:srcCompat="@drawable/ic_zoom"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/zoom4zu3"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintEnd_toStartOf="@+id/zoom16zu9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/power"
+        app:srcCompat="@drawable/ic_4z3"
+        tools:ignore="MissingConstraints"
+        tools:src="@tools:sample/avatars[10]" />
+
+    <ImageButton
+        android:id="@+id/zoom16zu9"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintEnd_toStartOf="@+id/zoom3zu1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/pause"
+        app:srcCompat="@drawable/ic_16z9"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/zoom3zu1"
+        android:layout_width="105dp"
+        android:layout_height="89dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zoom16zu9"
+        app:layout_constraintTop_toBottomOf="@+id/pip"
+        app:srcCompat="@drawable/ic_3z1"
+        tools:ignore="MissingConstraints" />
+
+    <SeekBar
+        android:id="@+id/volSeekBar"
+        android:layout_width="163dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.935"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/mute"
+        android:layout_width="82dp"
+        android:layout_height="80dp"
+        app:chainUseRtl="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/volDown"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962"
+        app:srcCompat="@drawable/ic_stumm"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/volDown"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/volSeekBar"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.936"
+        app:srcCompat="@drawable/ic_leiser"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/volUp"
+        android:layout_width="68dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/volSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/zoom3zu1"
+        app:layout_constraintVertical_bias="0.936"
+        app:srcCompat="@drawable/ic_lauter"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinnerliste"
+        android:layout_width="232dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/volSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.12" />
+
+
+    <ImageButton
+        android:id="@+id/scan"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinnerliste"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434"
+        app:srcCompat="@drawable/ic_kanalliste"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/up"
+        android:layout_width="91dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_plusprogramm"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/down"
+        android:layout_width="91dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/volSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerliste"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_minusprogramm"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="91dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="72dp"
+        android:text="ZDF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/volSeekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerliste"
+        app:layout_constraintVertical_bias="0.923"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>

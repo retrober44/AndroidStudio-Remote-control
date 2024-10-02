@@ -1,0 +1,4 @@
+#Thu Jan 03 17:12:44 CET 2019
+base.0=/home/roberko44/AndroidStudioProjects/Fernbedienung/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex
